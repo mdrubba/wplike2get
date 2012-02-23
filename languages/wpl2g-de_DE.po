@@ -1,0 +1,506 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: wpLike2Get.php:103
+#@ default
+msgid "Settings"
+msgstr ""
+
+#: wpLike2Get.php:139
+#@ wpl2g
+msgid "General Options"
+msgstr "Allgemeine Optionen"
+
+#: wpLike2Get.php:140
+#@ wpl2g
+msgid "Facebook Options"
+msgstr "Facebook Optionen"
+
+#: wpLike2Get.php:141
+#@ wpl2g
+msgid "Twitter Options"
+msgstr "Twitter Optionen"
+
+#: wpLike2Get.php:142
+#@ wpl2g
+msgid "Google+ Options"
+msgstr "Google+ Optionen"
+
+#: wpLike2Get.php:144
+#@ wpl2g
+msgid "Give a little love"
+msgstr "Gib ein bisschen Liebe"
+
+#: wpLike2Get.php:155
+#@ wpl2g
+msgid "wpLike2Get Settings"
+msgstr "wpLike2Get Einstellungen"
+
+#: wpLike2Get.php:194
+#@ default
+msgid "Cheatin&#8217; uh?"
+msgstr ""
+
+#: wpLike2Get.php:308
+#@ wpl2g
+msgid "Protect Download with wpLike2Get"
+msgstr "Schütze Download mit wpLike2Get"
+
+#: wpLike2Get.php:463
+#@ wpl2g
+msgid "Facebook"
+msgstr "Facebook"
+
+#: wpLike2Get.php:467
+#@ wpl2g
+msgid "activate Facebook support"
+msgstr "Facebook-Unterstützung aktivieren"
+
+#: wpLike2Get.php:472
+#@ wpl2g
+msgid "Twitter"
+msgstr "Twitter"
+
+#: wpLike2Get.php:476
+#@ wpl2g
+msgid "activate Twitter support"
+msgstr "Twitter-Unterstützung aktivieren"
+
+#: wpLike2Get.php:481
+#@ wpl2g
+msgid "Google+"
+msgstr "Google+"
+
+#: wpLike2Get.php:485
+#@ wpl2g
+msgid "activate Google+ support"
+msgstr "Google+-Unterstützung aktivieren"
+
+#: wpLike2Get.php:490
+#@ wpl2g
+msgid "Keep Download Link"
+msgstr "Download-Link anzeigen"
+
+#: wpLike2Get.php:494
+#@ wpl2g
+msgid "Keep Download Link after reload"
+msgstr "Download-Link nach Aktualisierung der Seite anzeigen"
+
+#: wpLike2Get.php:499
+#@ wpl2g
+msgid "Link name"
+msgstr "Linkname"
+
+#: wpLike2Get.php:503
+#@ wpl2g
+msgid "Define the fallback name for the Download-Link"
+msgstr "Bezeichnung für Download-Link, wenn keine angegeben wurde"
+
+#: wpLike2Get.php:508
+#@ wpl2g
+msgid "Give love to the Developer"
+msgstr "Gibt dem Entwickler etwas Liebe"
+
+#: wpLike2Get.php:517
+#@ wpl2g
+msgid "Uninstall"
+msgstr "Deinstallieren"
+
+#: wpLike2Get.php:521
+#@ wpl2g
+msgid "Delete plugin options when plugin is disabled"
+msgstr "Lösche alle Plugin-Optionen wenn das Plugin deaktiviert wird"
+
+#: wpLike2Get.php:527
+#: wpLike2Get.php:938
+#@ default
+msgid "Save Changes"
+msgstr ""
+
+#: wpLike2Get.php:545
+#@ wpl2g
+msgid "Hide after like"
+msgstr "Nach Like ausblenden"
+
+#: wpLike2Get.php:549
+#@ wpl2g
+msgid "Hide the button after user click the like button"
+msgstr "Blende den Button aus, nachdem der Benutzer den Like-Button geklickt hat"
+
+#: wpLike2Get.php:554
+#@ wpl2g
+msgid "Facebook like Button"
+msgstr "Facebook Like-Button"
+
+#: wpLike2Get.php:566
+#@ wpl2g
+msgid "Determines the size and amount of social context next to the button"
+msgstr "Bestimme wie der Like-Button aussehen soll"
+
+#: wpLike2Get.php:571
+#@ wpl2g
+msgid "like"
+msgstr "Gefällt mir"
+
+#: wpLike2Get.php:572
+#@ wpl2g
+msgid "recommend"
+msgstr "Empfehlen"
+
+#: wpLike2Get.php:575
+#@ wpl2g
+msgid "The verb to display in the button. Currently only \"like\" and \"recommend\" are supported"
+msgstr "Das Verb das im Like-Button angezeigt werden soll. Aktuell werden nur \"Gefällt mir\" und \"Empfehlen\" unterstützt"
+
+#: wpLike2Get.php:588
+#@ wpl2g
+msgid "The font of the button"
+msgstr "Die Schriftart des Buttons"
+
+#: wpLike2Get.php:593
+#@ wpl2g
+msgid "light"
+msgstr "hell"
+
+#: wpLike2Get.php:594
+#@ wpl2g
+msgid "dark"
+msgstr "dunkel"
+
+#: wpLike2Get.php:597
+#@ wpl2g
+msgid "The color scheme of the button"
+msgstr "Das Farbschema des Buttons"
+
+#: wpLike2Get.php:601
+#@ wpl2g
+msgid "The width of the button in pixels"
+msgstr "Die Breite des Buttons in Pixeln"
+
+#: wpLike2Get.php:605
+#@ wpl2g
+msgid "Include a send button"
+msgstr "Senden-Button anzeigen"
+
+#: wpLike2Get.php:609
+#@ wpl2g
+msgid "Show profile pictures below the button"
+msgstr "Zeige Profilbilder unter dem Button"
+
+#: wpLike2Get.php:613
+#@ wpl2g
+msgid "Include comments below the button"
+msgstr "Zeige Kommentare unter dem Button"
+
+#: wpLike2Get.php:620
+#@ wpl2g
+msgid "Open Graph Settings"
+msgstr "Open Graph Einstellungen"
+
+#: wpLike2Get.php:625
+#@ wpl2g
+msgid "Facebook App-ID"
+msgstr "Facebook API-Schlüssel"
+
+#: wpLike2Get.php:629
+#@ wpl2g
+msgid "Facebook User-ID"
+msgstr "Facebook Benutzer-ID"
+
+#: wpLike2Get.php:633
+#@ wpl2g
+msgid "The name of your site/your company or brand"
+msgstr "Der Name der Seite, des Unternehmens oder der Marke"
+
+#: wpLike2Get.php:640
+#: wpLike2Get.php:770
+#: wpLike2Get.php:848
+#@ wpl2g
+msgid "Google Analytics Tracking"
+msgstr ""
+
+#: wpLike2Get.php:641
+#: wpLike2Get.php:771
+#: wpLike2Get.php:849
+#@ wpl2g
+msgid "Be sure to have a working Google Analytics-Code on your page"
+msgstr "Stelle sicher das du einen funktionierenden Google Analytics-Code eingebunden hast"
+
+#: wpLike2Get.php:647
+#: wpLike2Get.php:777
+#: wpLike2Get.php:855
+#@ wpl2g
+msgid "Track likes with Google Analytics"
+msgstr "Likes mit Google Analytics tracken"
+
+#: wpLike2Get.php:652
+#: wpLike2Get.php:782
+#: wpLike2Get.php:860
+#@ wpl2g
+msgid "new (_gaq)"
+msgstr "neu (_gaq)"
+
+#: wpLike2Get.php:653
+#: wpLike2Get.php:783
+#: wpLike2Get.php:861
+#@ wpl2g
+msgid "old (pageTracker)"
+msgstr "alt (pageTracker)"
+
+#: wpLike2Get.php:656
+#: wpLike2Get.php:786
+#: wpLike2Get.php:864
+#@ wpl2g
+msgid "Decide between old and new Tracking-Version"
+msgstr "Entscheide zwischen der alten oder neuen Tracking-Methode"
+
+#: wpLike2Get.php:681
+#@ wpl2g
+msgid "Hide after tweet/follow"
+msgstr "Ausblenden nach Tweet/Follow"
+
+#: wpLike2Get.php:685
+#@ wpl2g
+msgid "Hide the button after user sent tweet/followed"
+msgstr "Blende den Button aus, nachdem der Benutzer einen Tweet gesendet hat oder dir gefolgt ist"
+
+#: wpLike2Get.php:690
+#@ wpl2g
+msgid "User"
+msgstr "Benutzer"
+
+#: wpLike2Get.php:694
+#@ wpl2g
+msgid "Twitter username who is followed/mentioned"
+msgstr "Twitter Benutzername dem gefolgt / der erwähnt werden soll"
+
+#: wpLike2Get.php:699
+#@ wpl2g
+msgid "User Description"
+msgstr "Benutzerbeschreibung"
+
+#: wpLike2Get.php:703
+#@ wpl2g
+msgid "Is shown after the user sent the tweet"
+msgstr "Wird angezeigt, nachdem der Tweet gesendet wurde"
+
+#: wpLike2Get.php:708
+#@ wpl2g
+msgid "URL"
+msgstr ""
+
+#: wpLike2Get.php:712
+#@ wpl2g
+msgid "The URL that is sent in tweet. Leave blank to get dynamic URL."
+msgstr "Die URL die im Tweet erscheinen soll. Leer lassen um eine dynamische URL zu erhalten."
+
+#: wpLike2Get.php:717
+#@ wpl2g
+msgid "Title"
+msgstr "Titel"
+
+#: wpLike2Get.php:721
+#@ wpl2g
+msgid "Set the title for the tweet. Leave blank to get dynamic title."
+msgstr "Setze den Titel des Tweets. Leer lassen um einen dynamischen Titel zu erhalten."
+
+#: wpLike2Get.php:726
+#@ wpl2g
+msgid "Twitter Button"
+msgstr "Twitter-Button"
+
+#: wpLike2Get.php:733
+#@ wpl2g
+msgid "vertical"
+msgstr "vertikal"
+
+#: wpLike2Get.php:734
+#@ wpl2g
+msgid "horizontal"
+msgstr "horizontal"
+
+#: wpLike2Get.php:735
+#@ wpl2g
+msgid "none"
+msgstr "keine Ausrichtung"
+
+#: wpLike2Get.php:738
+#@ wpl2g
+msgid "Layout is affecting only on Tweet button."
+msgstr "Das Layout bezieht sich nur auf den Tweet-Button"
+
+#: wpLike2Get.php:742
+#@ wpl2g
+msgid "The displayed counter is based on this URL. Leave blank to get dynamic URL."
+msgstr "Der angezeigte Zähler basiert auf dieser URL. Leer lassen um dynamische URL zu erhalten"
+
+#: wpLike2Get.php:747
+#@ wpl2g
+msgid "tweet"
+msgstr "Tweet"
+
+#: wpLike2Get.php:748
+#@ wpl2g
+msgid "follow"
+msgstr "Follow"
+
+#: wpLike2Get.php:751
+#@ wpl2g
+msgid "Decide to use tweet or follow button"
+msgstr "Entscheide dich für den Tweet- oder Follow-Button"
+
+#: wpLike2Get.php:763
+#@ wpl2g
+msgid "Select language for button"
+msgstr "Wähle die Sprache des Buttons"
+
+#: wpLike2Get.php:813
+#@ wpl2g
+msgid "Hide the button after user gplusedoned"
+msgstr "Blende den Button aus, nachdem der Benutzer den +1 Button geklickt hat"
+
+#: wpLike2Get.php:817
+#@ wpl2g
+msgid "Google+ Button"
+msgstr "Google+-Button"
+
+#: wpLike2Get.php:823
+#@ wpl2g
+msgid "small"
+msgstr "klein"
+
+#: wpLike2Get.php:824
+#@ wpl2g
+msgid "medium"
+msgstr "mittel"
+
+#: wpLike2Get.php:825
+#@ wpl2g
+msgid "standard"
+msgstr "standard"
+
+#: wpLike2Get.php:826
+#@ wpl2g
+msgid "tall"
+msgstr "groß"
+
+#: wpLike2Get.php:829
+#@ wpl2g
+msgid "Decide for a button size"
+msgstr "Entscheide dich für eine Größe"
+
+#: wpLike2Get.php:833
+#@ wpl2g
+msgid "Show counter (not working for tall button)"
+msgstr "Zeige Zähler (funktioniert nicht für den großen Button"
+
+#: wpLike2Get.php:837
+#@ wpl2g
+msgid "The URL that is sent. Leave blank to get dynamic URL."
+msgstr "Die URL die gesendet wird. Leer lassen um eine dynamische URL zu erhalten."
+
+#: wpLike2Get.php:841
+#@ wpl2g
+msgid "Set language (en-US, en-GB, de-DE, es, fr ...)"
+msgstr "Sprache festlegen (en-US, en-GB, de-DE, es, fr ...)"
+
+#: wpLike2Get.php:884
+#@ wpl2g
+msgid "The development of this Plugin cost me hours of work. To give a little love to me, send $5, $10, $20, $50, $100 or what ever you want."
+msgstr "Die Entwicklung des Plugins hat mich viele Stunden Arbeit gekostet. Um deine Anerkennung zu zeigen schicke mir doch 5€, 10€, 20€, 50€, 100€ oder soviel es dir eben Wert ist."
+
+#: wpLike2Get.php:891
+#@ wpl2g
+msgid "And I'm pleased to"
+msgstr "Und ich freue mich über"
+
+#: wpLike2Get.php:893
+#@ wpl2g
+msgid "get a 5 ★ rating on WordPress.org"
+msgstr "eine 5 ★  Bewertung auf WordPress.org"
+
+#: wpLike2Get.php:895
+#@ wpl2g
+msgid "read a review and get a link to the plugin page"
+msgstr "eine Rezension und einen Link zur Plugin-Seite"
+
+#: wpLike2Get.php:915
+#@ default
+msgid "Overview"
+msgstr ""
+
+#: wpLike2Get.php:920
+#@ default
+msgid "Troubleshooting"
+msgstr ""
+
+#: wpLike2Get.php:512
+#, php-format
+#@ wpl2g
+msgid "show a small link to the <a href=\"%s\">wpLike2Get Plugin page</a>"
+msgstr "Zeige einen kleinen Link zur <a href=\"%s\">wpLike2Get Plugin-Seite</a>"
+
+#: wpLike2Get.php:809
+#@ wpl2g
+msgid "Hide after gplusedone"
+msgstr "Ausblenden nach 1+"
+
+#: wpLike2Get.php:894
+#@ wpl2g
+msgid "get feedback and improvement proposal"
+msgstr "Feedback und Verbesserungsvorschläge"
+
+#. translators: plugin header field 'Name'
+#: wpLike2Get.php:0
+#@ wpl2g
+msgid "wpLike2Get"
+msgstr ""
+
+#. translators: plugin header field 'Author'
+#: wpLike2Get.php:0
+#@ wpl2g
+msgid "Markus Drubba"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: wpLike2Get.php:0
+#@ wpl2g
+msgid "http://markusdrubba.de"
+msgstr ""
+
+#. translators: plugin header field 'Version'
+#: wpLike2Get.php:0
+#@ wpl2g
+msgid "1.0"
+msgstr ""
+
+#. translators: plugin header field 'PluginURI'
+#: wpLike2Get.php:0
+#@ wpl2g
+msgid "http://markusdrubba.de/wordpress/wplike2get/#utm_source=wpadmin&utm_medium=plugin&utm_campaign=wplike2getplugin"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: wpLike2Get.php:0
+#@ wpl2g
+msgid "The first true social media download-protection solution for WordPress. Hide downloads until user like, tweet or +1 your content."
+msgstr "Die erste echte Social-Media-Download-Schutz-Lösung für WordPress. Downloads schützen, bis der Benutzer deine Inhalte liked, tweeted oder Google +1."
+

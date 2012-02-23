@@ -1,0 +1,57 @@
+#poststuff .inside {
+    margin: 0 0 8px;
+}
+
+#normal-sortables .postbox .submit {
+    float: none;
+    padding: 20px 10px;
+}
+
+.form-table {
+    margin-top: 0;
+}
+
+.form-table th {
+    border-right: #ebebeb solid 1px;
+    border-bottom: #ebebeb solid 1px;
+}
+
+.form-table td {
+    border-bottom: #ebebeb solid 1px;
+}
+
+.form-table td table th {
+    text-align: right;
+}
+
+.postbox .inside {
+    padding: 0 0;
+}
+
+td.child-table {
+    padding: 0;
+    margin: 0;
+}
+
+table.form-child-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.form-child-table tr:last-child th, table.form-child-table tr:last-child td {
+    border-bottom: 0;
+}
+
+div.love-box {
+    padding: 0 10px;
+}
+
+div.love-box form {
+    width: 160px;
+    margin: 0 auto;
+}
+
+div.love-box ul {
+    list-style-type: disc;
+    padding: 0 0 0 20px;
+}
