@@ -1,0 +1,20 @@
+l2g-download-link {
+    position: relative;
+}
+
+.l2g-plugin-link {
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+    font-size: 8px;
+}
+
+#l2g br {
+    clear: both;
+}
+
+#l2g .facebook, #l2g .twitter, #l2g .gplusone {
+    float: left;
+    width: 150px;
+    text-align: center;
+}

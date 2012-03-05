@@ -1,0 +1,116 @@
+/**
+ * CSS for the plugin settings page.
+ */
+.settings_page_wplike2get-settings .form-table th {
+    width: 20%;
+    font-weight: normal;
+}
+
+.settings_page_wplike2get-settings .metabox-holder .column-1 {
+    float: left;
+    width: 66%;
+}
+
+.settings_page_wplike2get-settings .metabox-holder .column-2 {
+    float: right;
+    width: 32%;
+}
+
+.settings_page_wplike2get-settings .hook-editor {
+    overflow: hidden;
+}
+
+.settings_page_wplike2get-settings p.submit {
+    clear: both;
+}
+
+.settings_page_wplike2get-settings textarea {
+    width: 99.5%;
+}
+
+.settings_page_wplike2get-settings .postbox .inside p,
+.settings_page_wplike2get-settings .postbox .inside label,
+.settings_page_wplike2get-settings .postbox .inside li,
+.settings_page_wplike2get-settings .postbox .inside a,
+.settings_page_wplike2get-settings .postbox .inside label {
+    line-height: 175%;
+}
+
+.settings_page_wplike2get-settings .postbox form {
+    line-height: 150%;
+}
+
+.settings_page_wplike2get-settings div.inside ul {
+    margin-left: 20px;
+}
+
+.settings_page_wplike2get-settings div.inside ul li {
+    list-style: square;
+    line-height: 16px;
+}
+
+.settings_page_wplike2get-settings div.inside .alignleft {
+    width: 45%;
+    float: left;
+}
+
+.settings_page_wplike2get-settings div.inside .alignright {
+    width: 45%;
+    float: right;
+    text-align: right;
+}
+
+.settings_page_wplike2get-settings #poststuff .inside {
+    margin: 0 0 -1px;
+}
+
+.settings_page_wplike2get-settings #normal-sortables .postbox .submit {
+    float: none;
+    padding: 20px 10px;
+}
+
+.settings_page_wplike2get-settings .form-table {
+    margin-top: 0;
+}
+
+.settings_page_wplike2get-settings .form-table th {
+    border-right: #ebebeb solid 1px;
+    border-bottom: #ebebeb solid 1px;
+}
+
+.settings_page_wplike2get-settings .form-table td {
+    border-bottom: #ebebeb solid 1px;
+}
+
+.settings_page_wplike2get-settings .form-table td table th {
+    text-align: right;
+}
+
+.settings_page_wplike2get-settings .normal .postbox .inside {
+    padding: 0 0;
+}
+
+.settings_page_wplike2get-settings td.child-table {
+    padding: 0;
+    margin: 0;
+}
+
+.settings_page_wplike2get-settings table.form-child-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.settings_page_wplike2get-settings table.form-child-table tr:last-child th,
+.settings_page_wplike2get-settings table.form-child-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.settings_page_wplike2get-settings div.love-box form {
+    width: 160px;
+    margin: 0 auto;
+}
+
+.settings_page_wplike2get-settings div.love-box ul {
+    list-style-type: disc;
+    padding: 0 0 0 20px;
+}
