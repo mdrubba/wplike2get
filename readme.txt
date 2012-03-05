@@ -1,10 +1,10 @@
-=== wpLike2Get by Markus Drubba ===
+=== wpLike2Get ===
 Contributors: drumba
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCVM7FZ6ZCM2A
 Tags: Pay with tweet, Pay per tweet, like 2 get, Facebook, Twitter, Google+, Google Plus, Markus Drubba, drumba, social network, social media
 Requires at least: 3.1
 Tested up to: 3.3
-Stable tag: "1.0"
+Stable tag: "1.1.0"
 
 Improve your social media spreading by letting your users pay with a like, a tweet or +1. wpLike2Get allows you to do this easily.
 
@@ -39,6 +39,10 @@ The social media buttons are loaded when the shortcode was detected. [l2g id="99
 coming soon
 
 == Changelog ==
+
+= 1.1.0 =
+* refactoring plugin code for a more wordpress standard code base
+* adding standard css styles to the button, so after activating pluign, you can use it without adding any css styles
 
 = 1.0 =
 * initial release
