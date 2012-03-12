@@ -104,6 +104,7 @@ jQuery(document).ready(function ($) {
     }
 
     function getDownloadLink() {
+        $('.l2g-hidden-content').show();
         $.post(
             l2g_options.ajaxurl,
             {
@@ -118,6 +119,7 @@ jQuery(document).ready(function ($) {
     }
 
     function removeDownloadLink() {
+        $('.l2g-hidden-content').hide();
         $('#l2g-download-link').hide();
         $('#l2g-download-link a').first().attr('href', '');
     }
