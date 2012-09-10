@@ -98,8 +98,8 @@ jQuery(document).ready(function ($) {
             hideafterlike:Boolean(l2g_options.gp_hide),
             googleanalytics:Boolean(l2g_options.gp_ga),
             googleanalytics_obj:l2g_options.gp_ga_version,
-            onlike:"jQuery.cookie('_liked' + l2g_options.cookie_suffix, 'liked');jQuery.post(l2g_options.ajaxurl,{action : 'l2g-get-download-link',id: jQuery(\"#l2g\").attr(\"class\")},function( response ) {jQuery('#l2g-download-link a').first().attr('href', response.link);jQuery('#l2g-download-link').show();});",
-            onunlike:"jQuery.cookie('_liked' + l2g_options.cookie_suffix, 'unliked');jQuery('#l2g-download-link').hide();jQuery('#l2g-download-link a').first().attr('href', '');"
+            onlike:"jQuery.cookie('_liked' + l2g_options.cookie_suffix, 'liked');jQuery('.l2g-hidden-content').show();jQuery.post(l2g_options.ajaxurl,{action : 'l2g-get-download-link',id: jQuery(\"#l2g\").attr(\"class\")},function( response ) {jQuery('#l2g-download-link a').first().attr('href', response.link);jQuery('#l2g-download-link').show();});",
+            onunlike:"jQuery.cookie('_liked' + l2g_options.cookie_suffix, 'unliked');jQuery('.l2g-hidden-content').hide();jQuery('#l2g-download-link').hide();jQuery('#l2g-download-link a').first().attr('href', '');"
         });
     }
 

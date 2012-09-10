@@ -3,8 +3,8 @@ Contributors: drumba
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCVM7FZ6ZCM2A
 Tags: Pay with tweet, Pay per tweet, like 2 get, Facebook, Twitter, Google+, Google Plus, Markus Drubba, drumba, social network, social media
 Requires at least: 3.1
-Tested up to: 3.3
-Stable tag: "1.2.0"
+Tested up to: 3.4.2
+Stable tag: "1.2.1"
 
 Improve your social media spreading by letting your users pay with a like, a tweet or +1. wpLike2Get allows you to do this easily.
 
@@ -47,6 +47,11 @@ Yes, since version 1.2.0 you can also hide content before user like your post/pa
 Use the following options in the shortcode: facebook="false", twitter="false" or gplusone="false"
 
 == Changelog ==
+
+= 1.2.1 =
+* fixing an error with G+ Plugin. User can't see hidden content when using G+.
+* fixing array_merge warning on activating plugin
+* integrating PressTrends Plugin API
 
 = 1.2.0 =
 * you can now also hiding content before user like the post/page (thanks to Ovidiu for the feature suggestion)

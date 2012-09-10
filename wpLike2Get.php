@@ -1,7 +1,7 @@
 <?php
     /**
      * Plugin Name: wpLike2Get
-     * Version: 1.2.0
+     * Version: 1.2.1
      * Plugin URI: http://markusdrubba.de/wordpress/wplike2get/#utm_source=wpadmin&utm_medium=plugin&utm_campaign=wplike2getplugin
      * Description: The first true social media download-protection solution for WordPress. Hide downloads until user like, tweet or +1 your content.
      * Author: Markus Drubba
@@ -10,7 +10,7 @@
      * Domain Path: /languages
      *
      * @package WpLike2Get
-     * @version 1.2.0
+     * @version 1.2.1
      * @author Markus Drubba <markus@markusdrubba.de>
      * @copyright Copyright (c) 2008 - 2012, Markus Drubba
      * @link http://markusdrubba.de/wordpress/wplike2get
@@ -41,7 +41,7 @@
         define('WPLIKE2GET_URI', trailingslashit(plugin_dir_url(__FILE__)));
 
         /* Define the plugin version. */
-        define('WPLIKE2GET_VERSION', '1.2.0');
+        define('WPLIKE2GET_VERSION', '1.2.1');
 
         /* if both logged in and not logged in users can send this AJAX request, add both of these actions, otherwise add only the appropriate one */
         add_action('wp_ajax_nopriv_l2g-get-download-link', 'wplike2get_get_download_link');
@@ -229,7 +229,10 @@
         if (wplike2get_get_setting('fb_activated') || wplike2get_get_setting('tw_activated') || wplike2get_get_setting('gp_activated'))
             wp_enqueue_script('wplike2get-script', WPLIKE2GET_URI . 'js/l2g.custom.js', array('jquery', 'wplike2get-cookie'), WPLIKE2GET_VERSION, true);
 
-        $options = array_merge(array('ajaxurl' => admin_url('admin-ajax.php'), 'cookie_suffix' => $_SERVER['REQUEST_URI']), get_option('wplike2get_settings'));
+        if( is_array( get_option('wplike2get_settings') ) )
+            $options = array_merge(array('ajaxurl' => admin_url('admin-ajax.php'), 'cookie_suffix' => $_SERVER['REQUEST_URI']), get_option('wplike2get_settings'));
+        else
+            $options = array( 'ajaxurl' => admin_url('admin-ajax.php'), 'cookie_suffix' => $_SERVER['REQUEST_URI'] );
         wp_localize_script('wplike2get-script', 'l2g_options', $options);
     }
 
@@ -280,7 +283,7 @@
             $return .= '</div>';
         }
 
-        $return .= '<div class="l2g-hidden-content" style="display: none">'.$content.'</div>';
+        $return .= '<div class="l2g-hidden-content" style="display: none">'.do_shortcode($content).'</div>';
 
         return $return;
     }
@@ -315,3 +318,54 @@
                 break;
         }
     }
+
+
+    /**
+     * PressTrends Plugin API
+     */
+    function presstrends_wpLike2Get_plugin ()
+    {
+
+        // PressTrends Account API Key
+        $api_key = 'uksntz4he7uz89ifuteizgda3jmayiz1p488';
+        $auth = 'xdwrgixg6t3ovq2b3pte7c9b341ncdvo9';
+
+        // Start of Metrics
+        global $wpdb;
+        $data = get_transient( 'presstrends_cache_data' );
+        if ( !$data || $data == '' ) {
+            $api_base = 'http://api.presstrends.io/index.php/api/pluginsites/update/auth/';
+            $url = $api_base . $auth . '/api/' . $api_key . '/';
+
+            $count_posts = wp_count_posts();
+            $count_pages = wp_count_posts( 'page' );
+            $comments_count = wp_count_comments();
+
+            // wp_get_theme was introduced in 3.4, for compatibility with older versions, let's do a workaround for now.
+            if ( function_exists( 'wp_get_theme' ) ) {
+                $theme_data = wp_get_theme();
+                $theme_name = urlencode( $theme_data->Name );
+            } else {
+                $theme_data = get_theme_data( get_stylesheet_directory() . '/style.css' );
+                $theme_name = $theme_data['Name'];
+            }
+
+            $plugin_name = '&';
+            foreach ( get_plugins() as $plugin_info ) {
+                $plugin_name .= $plugin_info['Name'] . '&';
+            }
+            // CHANGE __FILE__ PATH IF LOCATED OUTSIDE MAIN PLUGIN FILE
+            $plugin_data = get_plugin_data( __FILE__ );
+            $posts_with_comments = $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->posts WHERE post_type='post' AND comment_count > 0" );
+            $data = array( 'url' => stripslashes( str_replace( array( 'http://', '/', ':' ), '', site_url() ) ), 'posts' => $count_posts->publish, 'pages' => $count_pages->publish, 'comments' => $comments_count->total_comments, 'approved' => $comments_count->approved, 'spam' => $comments_count->spam, 'pingbacks' => $wpdb->get_var( "SELECT COUNT(comment_ID) FROM $wpdb->comments WHERE comment_type = 'pingback'" ), 'post_conversion' => ( $count_posts->publish > 0 && $posts_with_comments > 0 ) ? number_format( ( $posts_with_comments / $count_posts->publish ) * 100, 0, '.', '' ) : 0, 'theme_version' => $plugin_data['Version'], 'theme_name' => $theme_name, 'site_name' => str_replace( ' ', '', get_bloginfo( 'name' ) ), 'plugins' => count( get_option( 'active_plugins' ) ), 'plugin' => urlencode( $plugin_name ), 'wpversion' => get_bloginfo( 'version' ), );
+
+            foreach ( $data as $k => $v ) {
+                $url .= $k . '/' . $v . '/';
+            }
+            wp_remote_get( $url );
+            set_transient( 'presstrends_cache_data', $data, 60 * 60 * 24 );
+        }
+    }
+
+    // PressTrends WordPress Action
+    add_action( 'admin_init', 'presstrends_wpLike2Get_plugin' );
