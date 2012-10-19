@@ -174,10 +174,21 @@
         </tr>
         <tr>
             <th>
+                <label for="l2g_single_activation"><?php _e('Show on single only', 'wplike2get') ?></label>
+            </th>
+            <td>
+	            <input type="checkbox" name="wplike2get_settings[l2g_single_activation]" id="l2g_single_activation"
+	                                   value="1"<?php checked(wplike2get_get_setting('l2g_single_activation'), 1) ?>/>
+                <label class="description"
+                       for="l2g_single_activation"><?php _e('Show the Button(s) only on single views, not on home, or archive pages', 'wplike2get') ?></label>
+            </td>
+        </tr>
+        <tr>
+            <th>
                 <label for="l2g_show_plugin_link"><?php _e('Give love to the Developer', 'wplike2get') ?></label>
             </th>
             <td>
-                <input type="checkbox" name="wplike2get_settings[]l2g_show_plugin_link" id="l2g_show_plugin_link"
+                <input type="checkbox" name="wplike2get_settings[l2g_show_plugin_link]" id="l2g_show_plugin_link"
                        value="1"<?php checked(wplike2get_get_setting('l2g_show_plugin_link'), 1) ?>/>
                 <label class="description"
                        for="l2g_show_plugin_link"><?php printf(__('show a small link to the <a href="%s">wpLike2Get Plugin page</a>', 'wplike2get'), 'http://markusdrubba.de/wordpress/wplike2get/#utm_source=wpadmin&utm_medium=settingslink&utm_term=link&utm_campaign=wplike2getplugin') ?></label>

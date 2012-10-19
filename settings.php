@@ -82,6 +82,7 @@
             'keep_after_reload' => false,
             'l2g_link_identifier' => 'Download',
             'l2g_show_plugin_link' => false,
+            'l2g_single_activation' => true, // @since 1.2.2
 
             'fb_activated' => true,
             'fb_appID' => '',
