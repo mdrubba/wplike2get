@@ -114,3 +114,8 @@
     list-style-type: disc;
     padding: 0 0 0 20px;
 }
+
+/* hide part of amazon wishlist widget */
+.wdgt_hd {
+	display: none;
+}

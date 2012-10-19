@@ -27,6 +27,12 @@
         /* Add the 'Support' meta box. */
         add_meta_box('wplike2get-support', __('Support', 'wplike2get'), 'wplike2get_meta_box_display_support', $wplike2get->settings_page, 'side', 'low');
 
+	    /**
+	     * @since 1.2.2
+	     */
+	    /* Add the 'Wishlist' meta box. */
+        add_meta_box('wplike2get-wishlist', __('Wishlist', 'wplike2get'), 'wplike2get_meta_box_display_wishlist', $wplike2get->settings_page, 'side', 'low');
+
         /* Add the 'Support' meta box. */
         add_meta_box('wplike2get-general', __('General', 'wplike2get'), 'wplike2get_meta_box_display_general', $wplike2get->settings_page, 'normal', 'high');
 
@@ -102,8 +108,20 @@
     <p>
         <?php printf(__('Support for this plugin is provided via the support forums at %1$s. If you need any help using it, please ask your support questions there.', 'wplike2get'), '<a href="http://wordpress.org/tags/wplike2get" title="' . __('wpLike2Get Support Forums', 'wplike2get') . '">' . __('wpLike2Get', 'wplike2get') . '</a>'); ?>
     </p>
-    <?php
+	<?php
     }
+
+	/**
+	 * Displays the support meta box.
+	 *
+	 * @since 1.2.2
+	 */
+	function wplike2get_meta_box_display_wishlist($object, $box)
+	{
+	    ?>
+		<SCRIPT charset="utf-8" type="text/javascript" src="http://ws.amazon.de/widgets/q?ServiceVersion=20070822&MarketPlace=DE&ID=V20070822/DE/drumbadebrauc-21/8004/c3b192dc-0fab-41f9-837e-91fb908a1151"> </SCRIPT> <NOSCRIPT><A HREF="http://ws.amazon.de/widgets/q?ServiceVersion=20070822&MarketPlace=DE&ID=V20070822%2FDE%2Fdrumbadebrauc-21%2F8004%2Fc3b192dc-0fab-41f9-837e-91fb908a1151&Operation=NoScript">Amazon.de Widgets</A></NOSCRIPT>
+		<?php
+	}
 
     /**
      * Display the general meta box
