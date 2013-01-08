@@ -6,17 +6,35 @@
      * Description: The first true social media download-protection solution for WordPress. Hide downloads until user like, tweet or +1 your content.
      * Author: Markus Drubba
      * Author URI: http://markusdrubba.de
-     * Text Domain: wpl2g
+     * Text Domain: wplike2get
      * Domain Path: /languages
+     * License: GPL v3
      *
-     * @package WpLike2Get
-     * @version 1.2.2
-     * @author Markus Drubba <markus@markusdrubba.de>
+     * wpLike2Get
+     * Copyright (C) 2008-2012, Markus Drubba
+     *
+     * This program is free software: you can redistribute it and/or modify
+     * it under the terms of the GNU General Public License as published by
+     * the Free Software Foundation, either version 3 of the License, or
+     * (at your option) any later version.
+     *
+     * This program is distributed in the hope that it will be useful,
+     * but WITHOUT ANY WARRANTY; without even the implied warranty of
+     * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     * GNU General Public License for more details.
+     *
+     * You should have received a copy of the GNU General Public License
+     * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+     *
+     *
+     * @package   WpLike2Get
+     * @version   1.2.2
+     * @author    Markus Drubba <markus@markusdrubba.de>
      * @copyright Copyright (c) 2008 - 2012, Markus Drubba
-     * @link http://markusdrubba.de/wordpress/wplike2get
+     * @link      http://markusdrubba.de/wordpress/wplike2get
      */
 
-    /* Set up the plugin on the 'plugins_loaded' hook. */
+/* Set up the plugin on the 'plugins_loaded' hook. */
     add_action('plugins_loaded', 'wplike2get_setup');
 
     /* Upgrade plugin. */

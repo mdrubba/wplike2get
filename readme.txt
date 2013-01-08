@@ -4,7 +4,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Pay with tweet, Pay per tweet, like 2 get, Facebook, Twitter, Google+, Google Plus, Markus Drubba, drumba, social network, social media
 Requires at least: 3.1
 Tested up to: 3.4.2
-Stable tag: "1.2.1"
+Stable tag: "1.2.2"
+License: GPLv3
 
 Improve your social media spreading by letting your users pay with a like, a tweet or +1. wpLike2Get allows you to do this easily.
 
@@ -21,6 +22,15 @@ You have the ability to track the button-clicks with Google Analytics.
 = Usage =
 The social media buttons are loaded when the shortcode was detected. [l2g id="999"]. You can optional decide for a name of the downloadlink and you can select different social networks when you activated all on the wpLike2Get settings page. A complete shortcode for downloads looks like that: [l2g name="Download this awesome file" id="999" facebook="true" twitter="true" gplusone="false"]
  a complete shortcode for hiding content looks like that: [l2g facebook="true" twitter="true" gplusone="false"]here is your content to hide until user likes the content[/l2g]
+
+ = Shortcode options =
+* id => id of the attachment
+* name => some text
+* twitter => true|false
+* facebook => true|false
+* gplusone => true|false
+* single => true|false *if true show only on singular views (since v1.2.2)*
+* home_text => some text *only displayed when single is true (since v1.2.2)*
 
 == Installation ==
 
@@ -47,6 +57,13 @@ Yes, since version 1.2.0 you can also hide content before user like your post/pa
 Use the following options in the shortcode: facebook="false", twitter="false" or gplusone="false"
 
 == Changelog ==
+
+= 1.2.2 =
+* feature: adding an option to show buttons only on singular views (thanks @tiagosgd for feature-request)
+* feature: adding option to set facebook language
+* bugfix: some default options not observed
+* bugfix: show love to developer is not working
+* add a amazon wishlist widget to options page sidebar
 
 = 1.2.1 =
 * fixing an error with G+ Plugin. User can't see hidden content when using G+.

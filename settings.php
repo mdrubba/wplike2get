@@ -90,6 +90,7 @@
             'fb_siteName' => '',
             'fb_buttonWidth' => '',
             'fb_showfaces' => false,
+            'fb_lang' => 'en_US',  // @since 1.2.2
             'fb_send' => false,
             'fb_comments' => false,
             'fb_font' => 'lucida grande',

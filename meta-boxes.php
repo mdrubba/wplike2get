@@ -320,6 +320,14 @@
                         </td>
                     </tr>
                     <tr>
+                        <th>
+                            <input type="text" class="small-text" name="wplike2get_settings[fb_lang]" id="fb_lang" value="<?php echo wplike2get_get_setting( 'fb_lang' ) ?>">
+                        </th>
+                        <td>
+                            <label class="description" for="fb_lang"><?php _e( 'Set language (en_US, en_GB, de_DE, es_ES, fr_FR ...)', 'wplike2get' ) ?></label>
+                        </td>
+                    </tr>
+                    <tr>
                         <th><input type="checkbox" name="wplike2get_settings[fb_send]" id="fb_send"
                                    value="1"<?php checked(wplike2get_get_setting('fb_send'), 1) ?>></th>
                         <td><label class="description"
@@ -378,13 +386,12 @@
         <tr>
             <th>
                 <label for="fb_ga"><?php _e('Google Analytics Tracking', 'wplike2get') ?></label>
-
-                <p class="description"><?php _e('Be sure to have a working Google Analytics-Code on your page', 'wplike2get') ?></p>
             </th>
             <td class="child-table">
                 <table class="form-child-table">
                     <tr>
-                        <th><input type="checkbox" name="wplike2get_settings[fb_ga]" id="fb_ga"
+                        <th>
+	                        <input type="checkbox" name="wplike2get_settings[fb_ga]" id="fb_ga"
                                    value="1"<?php checked(wplike2get_get_setting('fb_ga'), 1) ?>></th>
                         <td><label class="description"
                                    for="fb_ga"><?php _e('Track likes with Google Analytics', 'wplike2get') ?></label>
@@ -401,6 +408,9 @@
                                    for="fb_ga_version"><?php _e('Decide between old and new Tracking-Version', 'wplike2get') ?></label>
                         </td>
                     </tr>
+	                <tr>
+		                <td colspan="2"><p class="description"><?php _e('Be sure to have a working Google Analytics-Code on your page', 'wplike2get') ?></p></td>
+	                </tr>
                 </table>
             </td>
         </tr>
@@ -544,8 +554,6 @@
         <tr>
             <th>
                 <label for="fb_ga"><?php _e('Google Analytics Tracking', 'wplike2get') ?></label>
-
-                <p class="description"><?php _e('Be sure to have a working Google Analytics-Code on your page', 'wplike2get') ?></p>
             </th>
             <td class="child-table">
                 <table class="form-child-table">
@@ -567,6 +575,9 @@
                                    for="tw_ga_version"><?php _e('Decide between old and new Tracking-Version', 'wplike2get') ?></label>
                         </td>
                     </tr>
+	                <tr>
+		                <td colspan="2"><p class="description"><?php _e('Be sure to have a working Google Analytics-Code on your page', 'wplike2get') ?></p></td>
+	                </tr>
                 </table>
             </td>
         </tr>
@@ -640,8 +651,6 @@
         <tr>
             <th>
                 <label for="fb_ga"><?php _e('Google Analytics Tracking', 'wplike2get') ?></label>
-
-                <p class="description"><?php _e('Be sure to have a working Google Analytics-Code on your page', 'wplike2get') ?></p>
             </th>
             <td class="child-table">
                 <table class="form-child-table">
@@ -663,6 +672,9 @@
                                    for="gp_ga_version"><?php _e('Decide between old and new Tracking-Version', 'wplike2get') ?></label>
                         </td>
                     </tr>
+	                <tr>
+		                <td colspan="2"><p class="description"><?php _e('Be sure to have a working Google Analytics-Code on your page', 'wplike2get') ?></p></td>
+	                </tr>
                 </table>
             </td>
         </tr>
