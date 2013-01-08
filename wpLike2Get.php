@@ -1,7 +1,7 @@
 <?php
     /**
      * Plugin Name: wpLike2Get
-     * Version: 1.2.2
+     * Version: 1.2.3
      * Plugin URI: http://markusdrubba.de/wordpress/wplike2get/#utm_source=wpadmin&utm_medium=plugin&utm_campaign=wplike2getplugin
      * Description: The first true social media download-protection solution for WordPress. Hide downloads until user like, tweet or +1 your content.
      * Author: Markus Drubba
@@ -28,7 +28,7 @@
      *
      *
      * @package   WpLike2Get
-     * @version   1.2.2
+     * @version   1.2.3
      * @author    Markus Drubba <markus@markusdrubba.de>
      * @copyright Copyright (c) 2008 - 2012, Markus Drubba
      * @link      http://markusdrubba.de/wordpress/wplike2get
@@ -48,6 +48,7 @@
      */
     function wplike2get_setup()
     {
+	    global $wp_version;
 
         /* Load the translation files. */
         load_plugin_textdomain('wplike2get', false, '/wplike2get/languages');
@@ -59,7 +60,7 @@
         define('WPLIKE2GET_URI', trailingslashit(plugin_dir_url(__FILE__)));
 
         /* Define the plugin version. */
-        define('WPLIKE2GET_VERSION', '1.2.1');
+        define('WPLIKE2GET_VERSION', '1.2.3');
 
         /* if both logged in and not logged in users can send this AJAX request, add both of these actions, otherwise add only the appropriate one */
         add_action('wp_ajax_nopriv_l2g-get-download-link', 'wplike2get_get_download_link');
@@ -69,9 +70,15 @@
         if (is_admin()) {
             require_once(WPLIKE2GET_DIR . 'settings.php');
 
-            /* add l2g checkbox to wp uploader */
-            add_filter('attachment_fields_to_edit', 'wplike2get_attachment_fields_to_edit', 10, 2);
-            add_filter('media_send_to_editor', 'wplike2get_media_send_to_editor', 20, 3);
+	        if ( version_compare( $wp_version, '3.5', '<' ) ) {
+                /* add l2g checkbox to wp uploader */
+                add_filter('attachment_fields_to_edit', 'wplike2get_attachment_fields_to_edit', 10, 2);
+                add_filter('media_send_to_editor', 'wplike2get_media_send_to_editor', 20, 3);
+	        } else {
+		        add_filter('attachment_fields_to_edit', 'wplike2get_attachment_fields_to_edit_35', 10, 2);
+                add_filter('media_send_to_editor', 'wplike2get_media_send_to_editor_35', 20, 3);
+				add_filter('attachment_fields_to_save', 'wplike2get_attachment_fields_to_save',10,2);
+	        }
 
             /* checking for the version number of the plugin, and update if required */
             $pluginpath = wplike2get_get_setting('plugin_path');
@@ -178,6 +185,24 @@
         return $fields;
     }
 
+	/**
+	 * integrate l2g checkbox into new wp uploader
+	 *
+	 * @since 1.2.3
+	 * @param $fields
+	 * @param $post
+	 * @return array
+	 */
+	function wplike2get_attachment_fields_to_edit_35($fields, $post)
+	{
+	    $fields['l2g_button_script'] = array(
+	        'label' => 'wpLike2Get',
+	        'input' => 'html',
+	        'html' => '<input type="checkbox" id="l2g-protected-' . $post->ID . '" name="attachments['.$post->ID.'][l2g-protected]" value="1" /> <label for="l2g-protected-' . $post->ID . '">' . __('Protect Download with wpLike2Get', 'wplike2get') . '</label>'
+	    );
+	    return $fields;
+	}
+
     /**
      * insert l2g shortcode into editor when l2g checkbox set
      *
@@ -194,6 +219,46 @@
         }
         return $html;
     }
+
+	/**
+	 * insert l2g shortcode into new editor when l2g checkbox set
+	 *
+	 * @since 1.2.3
+	 * @param $html
+	 * @param $send_id
+	 * @param $post
+	 * @return string
+	 */
+	function wplike2get_media_send_to_editor_35($html, $send_id, $post)
+	{
+		$is_set = get_post_meta( $send_id, 'l2g-protected', true );
+
+		if ( $is_set && $is_set == '1' ) {
+			delete_post_meta( $send_id, 'l2g-protected' ); // delete meta data for not saving checkbox value
+			$html = '[l2g name="' . $post['post_title'] . '" id="' . $send_id . '"]';
+		}
+
+		return $html;
+	}
+
+	/**
+	 * save activated checkbox temp as meta data
+	 *
+	 * @since 1.2.3
+	 * @param $post
+	 * @param $attachment_data
+	 *
+	 * @return mixed
+	 */
+	function wplike2get_attachment_fields_to_save($post, $attachment_data){
+
+	    if ( !empty($attachment_data['l2g-protected']) && $attachment_data['l2g-protected'] == '1' )
+	         update_post_meta($post['ID'], 'l2g-protected', true);
+	    else
+	         delete_post_meta($post['ID'], 'l2g-protected');
+
+	    return $post;
+	}
 
     /**
      * ajax call for getting attachment-link from frontend

@@ -3,8 +3,8 @@ Contributors: drumba
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BCVM7FZ6ZCM2A
 Tags: Pay with tweet, Pay per tweet, like 2 get, Facebook, Twitter, Google+, Google Plus, Markus Drubba, drumba, social network, social media
 Requires at least: 3.1
-Tested up to: 3.4.2
-Stable tag: "1.2.2"
+Tested up to: 3.5
+Stable tag: "1.2.3"
 License: GPLv3
 
 Improve your social media spreading by letting your users pay with a like, a tweet or +1. wpLike2Get allows you to do this easily.
@@ -47,6 +47,9 @@ The social media buttons are loaded when the shortcode was detected. [l2g id="99
 
 == Frequently Asked Questions ==
 
+= Can I contact you for support questions? =
+Yes, but please use the wordpress.org forums. In the future I give no support via email anymore.
+
 = Can I using it on old files? =
 Yes, you can use it also on files you uploaded before installing the plugin
 
@@ -58,28 +61,32 @@ Use the following options in the shortcode: facebook="false", twitter="false" or
 
 == Changelog ==
 
-= 1.2.2 =
+= 1.2.3 | 08.01.2013 =
+* full compatibility for wordpress 3.5
+* including french language file (thanks to @oweb (http://www.office-web.net) for the translation)
+
+= 1.2.2 | 19.10.2012 =
 * feature: adding an option to show buttons only on singular views (thanks @tiagosgd for feature-request)
 * feature: adding option to set facebook language
 * bugfix: some default options not observed
 * bugfix: show love to developer is not working
 * add a amazon wishlist widget to options page sidebar
 
-= 1.2.1 =
+= 1.2.1 | 10.09.2012 =
 * fixing an error with G+ Plugin. User can't see hidden content when using G+.
 * fixing array_merge warning on activating plugin
 * integrating PressTrends Plugin API
 
-= 1.2.0 =
+= 1.2.0 | 12.03.2012 =
 * you can now also hiding content before user like the post/page (thanks to Ovidiu for the feature suggestion)
 * using this feature you can use the [l2g] shortcode: [l2g]here is your content to hide until user likes the content[/l2g]
 * this feature is not implemented like the download link (requesting the link via ajax), the content is only hidden in the html output
 
-= 1.1.0 =
+= 1.1.0 | 24.02.2012 =
 * refactoring plugin code for a more wordpress standard code base
 * adding standard css styles to the button, so after activating plugin, you can use it without adding any css styles
 
-= 1.0 =
+= 1.0 | 10.02.2012 =
 * initial release
 
 == Upgrade Notice ==
