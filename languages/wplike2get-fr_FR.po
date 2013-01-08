@@ -1,0 +1,521 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpLike2Get v1.2.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-11-13 11:46+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#@ wplike2get
+#: settings.php:23
+msgid "wpLike2Get Settings"
+msgstr "wpLike2Get réglages "
+
+#@ wplike2get
+#: wpLike2Get.php:176
+msgid "Protect Download with wpLike2Get"
+msgstr "Protéger le téléchargement avec wpLike2Get "
+
+#@ wplike2get
+#: meta-boxes.php:40
+#: meta-boxes.php:139
+msgid "Facebook"
+msgstr "Facebook "
+
+#@ wplike2get
+#: meta-boxes.php:145
+msgid "activate Facebook support"
+msgstr "Utiliser Facebook "
+
+#@ wplike2get
+#: meta-boxes.php:43
+#: meta-boxes.php:150
+msgid "Twitter"
+msgstr "Twitter "
+
+#@ wplike2get
+#: meta-boxes.php:156
+msgid "activate Twitter support"
+msgstr "Utiliser Twitter "
+
+#@ wplike2get
+#: meta-boxes.php:161
+msgid "Google+"
+msgstr "Google+ "
+
+#@ wplike2get
+#: meta-boxes.php:167
+msgid "activate Google+ support"
+msgstr "Utiliser Google+ "
+
+#@ wplike2get
+#: meta-boxes.php:172
+msgid "Keep Download Link"
+msgstr "Maintenir le lien de téléchargement "
+
+#@ wplike2get
+#: meta-boxes.php:178
+msgid "Keep Download Link after reload"
+msgstr "Le lien de téléchargement reste visible après actualisation de la page "
+
+#@ wplike2get
+#: meta-boxes.php:183
+msgid "Link name"
+msgstr "Nom du lien "
+
+#@ wplike2get
+#: meta-boxes.php:190
+msgid "Define the fallback name for the Download-Link"
+msgstr "Définir le nom du lien de téléchargement "
+
+#@ wplike2get
+#: meta-boxes.php:206
+msgid "Give love to the Developer"
+msgstr "Vous appréciez le développeur"
+
+#@ wplike2get
+#: meta-boxes.php:232
+msgid "Hide after like"
+msgstr "Masquer après partage "
+
+#@ wplike2get
+#: meta-boxes.php:238
+msgid "Hide the button after user click the like button"
+msgstr "Masquer le bouton après partage de l'article"
+
+#@ wplike2get
+#: meta-boxes.php:243
+msgid "Facebook like Button"
+msgstr "Facebook Bouton J'aime "
+
+#@ wplike2get
+#: meta-boxes.php:262
+msgid "Determines the size and amount of social context next to the button"
+msgstr "Détermine la taille et le nombre de partages après le bouton"
+
+#@ wplike2get
+#: meta-boxes.php:268
+msgid "like"
+msgstr "J'aime"
+
+#@ wplike2get
+#: meta-boxes.php:269
+msgid "recommend"
+msgstr "Recommander"
+
+#@ wplike2get
+#: meta-boxes.php:273
+msgid "The verb to display in the button. Currently only \"like\" and \"recommend\" are supported"
+msgstr "Verbe à afficher dans le bouton. Uniquement \"J'aime\" et \"Recommander\" sont supportés "
+
+#@ wplike2get
+#: meta-boxes.php:300
+msgid "The font of the button"
+msgstr "Fonte du bouton "
+
+#@ wplike2get
+#: meta-boxes.php:306
+msgid "light"
+msgstr "clair"
+
+#@ wplike2get
+#: meta-boxes.php:307
+msgid "dark"
+msgstr "sombre"
+
+#@ wplike2get
+#: meta-boxes.php:311
+msgid "The color scheme of the button"
+msgstr "Apparence du bouton"
+
+#@ wplike2get
+#: meta-boxes.php:319
+msgid "The width of the button in pixels"
+msgstr "Largeur du bouton en pixels"
+
+#@ wplike2get
+#: meta-boxes.php:334
+msgid "Include a send button"
+msgstr "Ajouter bouton Envoyer"
+
+#@ wplike2get
+#: meta-boxes.php:342
+msgid "Show profile pictures below the button"
+msgstr "Afficher l'image du profil sous le bouton "
+
+#@ wplike2get
+#: meta-boxes.php:350
+msgid "Include comments below the button"
+msgstr "Ajouter les commentaires sous le bouton "
+
+#@ wplike2get
+#: meta-boxes.php:358
+msgid "Open Graph Settings"
+msgstr "Réglages Open Graph "
+
+#@ wplike2get
+#: meta-boxes.php:365
+msgid "Facebook App-ID"
+msgstr "Facebook App-ID "
+
+#@ wplike2get
+#: meta-boxes.php:372
+msgid "Facebook User-ID"
+msgstr "Facebook User-ID "
+
+#@ wplike2get
+#: meta-boxes.php:380
+msgid "The name of your site/your company or brand"
+msgstr "Nom du site/compagnie ou marque à promouvoir"
+
+#@ wplike2get
+#: meta-boxes.php:388
+#: meta-boxes.php:556
+#: meta-boxes.php:653
+msgid "Google Analytics Tracking"
+msgstr ""
+
+#@ wplike2get
+#: meta-boxes.php:412
+#: meta-boxes.php:579
+#: meta-boxes.php:676
+msgid "Be sure to have a working Google Analytics-Code on your page"
+msgstr "Vérifiez que votre code Google Analytics fonctionne sur vos pages "
+
+#@ wplike2get
+#: meta-boxes.php:397
+#: meta-boxes.php:564
+#: meta-boxes.php:661
+msgid "Track likes with Google Analytics"
+msgstr "Suivre les Likes Google Analytics "
+
+#@ wplike2get
+#: meta-boxes.php:403
+#: meta-boxes.php:570
+#: meta-boxes.php:667
+msgid "new (_gaq)"
+msgstr "nouveau (_gaq)"
+
+#@ wplike2get
+#: meta-boxes.php:404
+#: meta-boxes.php:571
+#: meta-boxes.php:668
+msgid "old (pageTracker)"
+msgstr "ancien (pageTracker)"
+
+#@ wplike2get
+#: meta-boxes.php:408
+#: meta-boxes.php:575
+#: meta-boxes.php:672
+msgid "Decide between old and new Tracking-Version"
+msgstr "Choisissez la méthode de suivi "
+
+#@ wplike2get
+#: meta-boxes.php:436
+msgid "Hide after tweet/follow"
+msgstr "Masquer après Tweet/Follow"
+
+#@ wplike2get
+#: meta-boxes.php:442
+msgid "Hide the button after user sent tweet/followed"
+msgstr "Masquer le bouton après l'envoi du tweet/followed"
+
+#@ wplike2get
+#: meta-boxes.php:447
+msgid "User"
+msgstr "Utilsiateur "
+
+#@ wplike2get
+#: meta-boxes.php:453
+msgid "Twitter username who is followed/mentioned"
+msgstr "Nom d'utilisateur Twitter qui est suivi/mentionné  "
+
+#@ wplike2get
+#: meta-boxes.php:458
+msgid "User Description"
+msgstr "Description de l'utilisateur "
+
+#@ wplike2get
+#: meta-boxes.php:465
+msgid "Is shown after the user sent the tweet"
+msgstr "Est affiché après l'envoi du tweet"
+
+#@ wplike2get
+#: meta-boxes.php:470
+msgid "URL"
+msgstr ""
+
+#@ wplike2get
+#: meta-boxes.php:476
+msgid "The URL that is sent in tweet. Leave blank to get dynamic URL."
+msgstr "L'adresse envoyée dans le tweet. Laisser vide pour utiliser les URLs dynamiques (adresse de la page). "
+
+#@ wplike2get
+#: meta-boxes.php:481
+msgid "Title"
+msgstr "Titre "
+
+#@ wplike2get
+#: meta-boxes.php:487
+msgid "Set the title for the tweet. Leave blank to get dynamic title."
+msgstr "Titre pour le tweet. Laisser vide pour utiliser les titres dynamiques (celui de la page). "
+
+#@ wplike2get
+#: meta-boxes.php:492
+msgid "Twitter Button"
+msgstr "Bouton Twitter"
+
+#@ wplike2get
+#: meta-boxes.php:499
+msgid "vertical"
+msgstr "vertical"
+
+#@ wplike2get
+#: meta-boxes.php:500
+msgid "horizontal"
+msgstr "horizontal"
+
+#@ wplike2get
+#: meta-boxes.php:501
+msgid "none"
+msgstr "aucun"
+
+#@ wplike2get
+#: meta-boxes.php:505
+msgid "Layout is affecting only on Tweet button."
+msgstr "Mise en forme du bouton Tweet "
+
+#@ wplike2get
+#: meta-boxes.php:513
+msgid "The displayed counter is based on this URL. Leave blank to get dynamic URL."
+msgstr "Le compteur est basé sur cette URL. Laisser vide pour utiliser les URLs dynamiques (adresse de la page). "
+
+#@ wplike2get
+#: meta-boxes.php:519
+msgid "tweet"
+msgstr "Tweet"
+
+#@ wplike2get
+#: meta-boxes.php:520
+msgid "follow"
+msgstr "Follow"
+
+#@ wplike2get
+#: meta-boxes.php:524
+msgid "Decide to use tweet or follow button"
+msgstr "Choisir le bouton Tweet ou Follow"
+
+#@ wplike2get
+#: meta-boxes.php:548
+msgid "Select language for button"
+msgstr "Langage du bouton "
+
+#@ wplike2get
+#: meta-boxes.php:607
+msgid "Hide the button after user gplusedoned"
+msgstr "Masquer le bouton après partage de l'article avec Google +1"
+
+#@ wplike2get
+#: meta-boxes.php:611
+msgid "Google+ Button"
+msgstr "Bouton Google+"
+
+#@ wplike2get
+#: meta-boxes.php:617
+msgid "small"
+msgstr "petit"
+
+#@ wplike2get
+#: meta-boxes.php:618
+msgid "medium"
+msgstr "moyen"
+
+#@ wplike2get
+#: meta-boxes.php:619
+msgid "standard"
+msgstr "standard"
+
+#@ wplike2get
+#: meta-boxes.php:620
+msgid "tall"
+msgstr "grand"
+
+#@ wplike2get
+#: meta-boxes.php:624
+msgid "Decide for a button size"
+msgstr "Choix de la taille du bouton "
+
+#@ wplike2get
+#: meta-boxes.php:631
+msgid "Show counter (not working for tall button)"
+msgstr "Affiche le compteur (ne fonctionne pas pour le bouton grand)"
+
+#@ wplike2get
+#: meta-boxes.php:638
+msgid "The URL that is sent. Leave blank to get dynamic URL."
+msgstr "L'adresse envoyée. Laisser vide pour utiliser les URLs dynamiques (adresse de la page). "
+
+#@ wplike2get
+#: meta-boxes.php:645
+msgid "Set language (en-US, en-GB, de-DE, es, fr ...)"
+msgstr "Choix du langage (en-US, en-GB, de-DE, es, fr ...)"
+
+#@ wplike2get
+#: meta-boxes.php:212
+#, php-format
+msgid "show a small link to the <a href=\"%s\">wpLike2Get Plugin page</a>"
+msgstr "afficher le lien (petit) de la <a href=\"%s\">page du plugin wpLike2Get</a> "
+
+#@ wplike2get
+#: meta-boxes.php:601
+msgid "Hide after gplusedone"
+msgstr "Masquer après +1"
+
+#@ wplike2get
+#. translators: plugin header field 'Name'
+#: meta-boxes.php:109
+#: settings.php:23
+#: wpLike2Get.php:0
+msgid "wpLike2Get"
+msgstr ""
+
+#@ wplike2get
+#. translators: plugin header field 'Author'
+#: wpLike2Get.php:0
+msgid "Markus Drubba"
+msgstr ""
+
+#@ wplike2get
+#. translators: plugin header field 'AuthorURI'
+#: wpLike2Get.php:0
+msgid "http://markusdrubba.de"
+msgstr ""
+
+#@ wplike2get
+#. translators: plugin header field 'PluginURI'
+#: wpLike2Get.php:0
+msgid "http://markusdrubba.de/wordpress/wplike2get/#utm_source=wpadmin&utm_medium=plugin&utm_campaign=wplike2getplugin"
+msgstr ""
+
+#@ wplike2get
+#. translators: plugin header field 'Description'
+#: wpLike2Get.php:0
+msgid "The first true social media download-protection solution for WordPress. Hide downloads until user like, tweet or +1 your content."
+msgstr "La première protection de téléchargement via les réseaux sociaux pour WordPress. Masque le téléchargement tant que le visiteur n'a pas partagé votre contenu avec like, tweet ou +1."
+
+#@ wplike2get
+#: meta-boxes.php:22
+msgid "About"
+msgstr "A propos"
+
+#@ wplike2get
+#: meta-boxes.php:25
+msgid "Like this plugin?"
+msgstr "Vous aimez ce plugin ?"
+
+#@ wplike2get
+#: meta-boxes.php:28
+msgid "Support"
+msgstr ""
+
+#@ wplike2get
+#: meta-boxes.php:37
+msgid "General"
+msgstr "Général"
+
+#@ wplike2get
+#: meta-boxes.php:46
+msgid "Google"
+msgstr ""
+
+#@ wplike2get
+#: meta-boxes.php:59
+msgid "Here's how you can give back:"
+msgstr "Vous pouvez le montrer :"
+
+#@ wplike2get
+#: meta-boxes.php:62
+msgid "Give the plugin a 5 ★ rating on WordPress.org"
+msgstr "Evaluer avec 5 ★ sur WordPress.org"
+
+#@ wplike2get
+#: meta-boxes.php:65
+msgid "Donate a few dollars."
+msgstr "Donner quelques Euro"
+
+#@ wplike2get
+#: meta-boxes.php:68
+msgid "Give feedback and improvement proposal"
+msgstr "Envoyer un message ou proposer une amélioration"
+
+#@ wplike2get
+#: meta-boxes.php:71
+msgid "Write a review and give a link to the plugin page"
+msgstr "Donner votre avis et ajouter un lien vers la page du plugin"
+
+#@ wplike2get
+#: meta-boxes.php:89
+msgid "Version:"
+msgstr "Version : "
+
+#@ wplike2get
+#: meta-boxes.php:92
+msgid "Description:"
+msgstr "Description : "
+
+#@ wplike2get
+#: meta-boxes.php:109
+#, php-format
+msgid "Support for this plugin is provided via the support forums at %1$s. If you need any help using it, please ask your support questions there."
+msgstr "Le support pour ce plugin est fourni sur le forum %1$s. Si vous avez besoin d'aide pour l'utilisation de %1$s veuillez y poser vos questions. "
+
+#@ wplike2get
+#: meta-boxes.php:109
+msgid "wpLike2Get Support Forums"
+msgstr "Forum de support wpLike2Get "
+
+#@ wplike2get
+#: settings.php:161
+msgid "wpLike2Get Plugin Settings"
+msgstr "Réglage du plugin wpLike2Get "
+
+#@ wplike2get
+#: settings.php:177
+msgid "Update Settings"
+msgstr "Mettre à jour les réglages "
+
+#@ wplike2get
+#: meta-boxes.php:195
+msgid "Show on single only"
+msgstr "Uniquement dans l'article "
+
+#@ wplike2get
+#: meta-boxes.php:201
+msgid "Show the Button(s) only on single views, not on home, or archive pages"
+msgstr "Affiche le(s) bouton(s) uniquement dans l'article complet, pas en page d'accueil ou en pages d'archives "
+
+#@ wplike2get
+#: meta-boxes.php:34
+msgid "Wishlist"
+msgstr "Liste d'envies "
+
+#@ wplike2get
+#: meta-boxes.php:327
+msgid "Set language (en_US, en_GB, de_DE, es_ES, fr_FR ...)"
+msgstr "Langage (en_US, en_GB, de_DE, es_ES, fr_FR ...)"
+
+#@ wplike2get
+#. translators: plugin header field 'Version'
+#: wpLike2Get.php:0
+msgid "1.2.2"
+msgstr ""
+
