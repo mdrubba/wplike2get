@@ -1,7 +1,7 @@
 <?php
     /**
      * Plugin Name: wpLike2Get
-     * Version: 1.2.3
+     * Version: 1.2.4
      * Plugin URI: http://markusdrubba.de/wordpress/wplike2get/#utm_source=wpadmin&utm_medium=plugin&utm_campaign=wplike2getplugin
      * Description: The first true social media download-protection solution for WordPress. Hide downloads until user like, tweet or +1 your content.
      * Author: Markus Drubba
@@ -28,7 +28,7 @@
      *
      *
      * @package   WpLike2Get
-     * @version   1.2.3
+     * @version   1.2.4
      * @author    Markus Drubba <markus@markusdrubba.de>
      * @copyright Copyright (c) 2008 - 2012, Markus Drubba
      * @link      http://markusdrubba.de/wordpress/wplike2get
@@ -60,7 +60,7 @@
         define('WPLIKE2GET_URI', trailingslashit(plugin_dir_url(__FILE__)));
 
         /* Define the plugin version. */
-        define('WPLIKE2GET_VERSION', '1.2.3');
+        define('WPLIKE2GET_VERSION', '1.2.4');
 
         /* if both logged in and not logged in users can send this AJAX request, add both of these actions, otherwise add only the appropriate one */
         add_action('wp_ajax_nopriv_l2g-get-download-link', 'wplike2get_get_download_link');
@@ -96,6 +96,9 @@
 
             /* Load any styles needed. */
             add_action('template_redirect', 'wplike2get_enqueue_style');
+
+	        /* add experimental filter */
+	        add_filter( 'the_content', 'wplike2get_filter_content' );
         }
     }
 
@@ -391,6 +394,27 @@
 
         return $return;
     }
+
+	/**
+	 * add experimental filter for filter
+	 * content for <!--wplike2get--> tag
+	 *
+	 * @since 1.2.4
+	 * @param $content
+	 * @return string
+	 */
+	function wplike2get_filter_content( $content ) {
+		if ( preg_match( '/<!--wplike2get(.*?)?-->/', $content, $matches ) ) {
+			$content = explode( $matches[0], $content, 2 );
+		} else {
+			$content = array( $content );
+		}
+
+		if ( count( $content ) < 2 )
+			return $content[0];
+
+		return $content[0] . "[l2g]" . $content[1] . "[/l2g]";
+	}
 
     /**
      * convert strings to boolean this function is needed
